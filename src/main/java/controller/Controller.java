@@ -28,15 +28,15 @@ public class Controller extends HttpServlet {
 		} else if (action.equals("/insert")) {
 			newLogin(request, response);
 		}else {
-			response.sendRedirect("index.jsp");
+			response.sendRedirect("index.html");
 		}
-		if (action.equals("/main")) {
-			newAccount(request, response);
-		} else if (action.equals("/insert")) {
-			newUser(request, response);
-		}else {
-			response.sendRedirect("register.jsp");
-		}
+//		if (action.equals("/main")) {
+//			newAccount(request, response);
+//		} else if (action.equals("/insert")) {
+//			newUser(request, response);
+//		}else {
+//			response.sendRedirect("newAccount.jsp");
+//		}
 	}
 
 	protected void register(HttpServletRequest request, HttpServletResponse response)
@@ -53,24 +53,23 @@ public class Controller extends HttpServlet {
 		
 	}
 	
-	
-	protected void newAccount(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		response.sendRedirect("register.jsp");
-	}
-
-	protected void newUser(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException{
-		System.out.println(request.getParameter("uNN"));
-		System.out.println(request.getParameter("cPass"));
-		System.out.println(request.getParameter("confirmPass"));
-		rgtd.setNameUser(request.getParameter("uNN"));
-		rgtd.setPass(request.getParameter("cPass"));
-		rgtd.setPass(request.getParameter("confirmPass"));
-
-		
-		
-	}
+//	protected void newAccount(HttpServletRequest request, HttpServletResponse response)
+//			throws ServletException, IOException {
+//		response.sendRedirect("newAccount.jsp");
+//	}
+//
+//	protected void newUser(HttpServletRequest request, HttpServletResponse response)
+//			throws ServletException, IOException{
+//		System.out.println(request.getParameter("uNN"));
+//		System.out.println(request.getParameter("cPass"));
+//		System.out.println(request.getParameter("confirmPass"));
+//		rgtd.setNameUser(request.getParameter("uNN"));
+//		rgtd.setPass(request.getParameter("cPass"));
+//		rgtd.setPass(request.getParameter("confirmPass"));
+//
+//		
+//		
+//	}
 	
 
 	

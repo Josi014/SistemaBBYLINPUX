@@ -18,13 +18,17 @@ body {
 
 .container {
 	margin: auto;
-	padding-top: 110px;
+	padding-top: 150px;
+}
+nav a {
+    color: #000000;
+    text-decoration: none;
 }
 
 img {
 	width: 600px;
 	height: 540px;
-	padding: 45px;
+	padding: 15px;
 	margin: auto;
 }
 
@@ -50,4 +54,6 @@ h1 {
 	border: 1px solid #000;
 	border-radius: 5px;
 	background-color: #0090c0;
+	font-size: 15px;
+	
 }
